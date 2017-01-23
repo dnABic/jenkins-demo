@@ -3,6 +3,12 @@ node {
     checkout scm
   }
   stage('Build') {
-    echo 'Hello World v10'
+    echo 'Bla bla bla'
+  }
+  stage('Test') {
+    echo 'I run some test'
+  }
+  stage('Upload to repository') {
+    echo 'upload done'
   }
 }
