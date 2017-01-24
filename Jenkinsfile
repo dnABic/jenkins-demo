@@ -15,6 +15,7 @@ node {
         //sh '. /opt/venv/bin/activate && cd /opt/app/ && python -m coverage xml --include=modules*'
         //sh 'cd /opt/app/ && cp coverage.xml /ebs/jenkins/workspace/event-log/'
         sh 'ls -la'
+        sh 'ps -a'
       }
     //}
     //step([$class: 'JUnitResultArchiver', allowEmptyResults: false, testResults: '**/coverage.xml'])
