@@ -10,7 +10,7 @@ node {
 
   stage('Integration test') {
     try {
-//      sh 'docker-compose up -d'
+      sh 'docker-compose up -d'
       sleep 10
 //      //mail subject: 'all well', to: 'me@example.com', body: 'All well.'
     } catch (e) {
