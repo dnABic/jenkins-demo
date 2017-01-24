@@ -8,7 +8,7 @@ node {
     echo 'building app, not really.'
   }
 
-  stage('Integration test' {
+  stage('Integration test') {
     try {
 //      sh 'docker-compose up -d'
       sleep 10
