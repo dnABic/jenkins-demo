@@ -25,6 +25,6 @@ node {
   }
 
   stage('Upload to repository') {
-    echo 'upload done'
+    echo 'upload successful'
   }
 }
