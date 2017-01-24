@@ -12,15 +12,15 @@ node {
     try {
       sh 'docker-compose up -d'
       sleep 10
-//      //mail subject: 'all well', to: 'me@example.com', body: 'All well.'
+      //mail subject: 'all well', to: 'me@example.com', body: 'All well.'
     } catch (e) {
       def w = new StringWriter()
       e.printStackTrace(new PrintWriter(w))
-//      //mail subject: "failed with ${e.message}", to: 'me@example.com', body: "Failed: ${w}"
-//      throw e
+      //mail subject: "failed with ${e.message}", to: 'me@example.com', body: "Failed: ${w}"
+      throw e
     } finally {
       sh 'docker-compose stop'
-//    sh 'docker-compose rm -f'
+      sh 'docker-compose rm -f'
     }
   }
 
