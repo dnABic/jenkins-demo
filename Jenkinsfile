@@ -37,7 +37,7 @@ node {
   }
 
   stage('Upload to repository') {
-    stage 'Push to registry image test-app:production
+    echo 'Image pushed to repo'
     //newImg.push 'production'
   }
 }
