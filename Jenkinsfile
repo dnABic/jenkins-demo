@@ -5,7 +5,7 @@ node {
   }
 
   stage('Build') {
-    echo 'building app, not really'
+    echo 'building app, not really.'
   }
 
   stage('Integration test' {
