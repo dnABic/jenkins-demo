@@ -7,7 +7,7 @@ node {
   stage('Build and Test image test-app:test') {
     //docker.withRegistry('https://141047255820.dkr.ecr.us-east-1.amazonaws.com:443') {
       def newImg = docker.build ("test-app:test",".")
-      docker.image("test.app:test").inside('-u 0:0') {
+      docker.image("test-app:test").inside('-u 0:0') {
         //sh 'ls -la /opt/; ps auxw; ls -la /ebs/; ls -la /ebs/data/'
         //sh '. /opt/venv/bin/activate && cd /opt/app/ && pylint -f parseable -d I0011,R0801 modules | tee pylint.out'
         //sh '. /opt/venv/bin/activate && cd /opt/app/ && nosetests -vi test_app.py'
