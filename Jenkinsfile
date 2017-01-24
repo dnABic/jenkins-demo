@@ -39,6 +39,6 @@ node {
 
   stage('Upload to repository') {
     echo 'Image pushed to repo'
-    //newImg.push 'production'
+    //newImg.push 'production1'
   }
 }
