@@ -1,7 +1,8 @@
 //node('jenkins-slave-CI') {
 node {
   stage('Checkout') {
-    properties([pipelineTriggers([[$class: 'GitHubPushTrigger']])]) 
+    //properties([pipelineTriggers([[$class: 'GitHubPushTrigger']])]) 
+    properties([pipelineTriggers([[$class: 'GitHubPushTrigger'], pollSCM('H/15 * * * *')])])
     checkout scm
   }
 
