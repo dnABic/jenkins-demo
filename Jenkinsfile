@@ -1,4 +1,5 @@
 //node('jenkins-slave-CI') {
+//
 node {
   stage('Checkout') {
     //properties([pipelineTriggers([[$class: 'GitHubPushTrigger']])]) 
